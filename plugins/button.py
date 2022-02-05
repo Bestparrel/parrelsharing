@@ -18,7 +18,7 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                ##InlineKeyboardButton(text="💢 𝙶𝚁𝙾𝚄𝙿 💢", url=client.invitelink2),##
+                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 1 💢", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="🔥 𝚃𝙴𝙽𝚃𝙰𝙽𝙶 𝙰𝙺𝚄 🔥", callback_data="about"),
@@ -29,7 +29,7 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💢", url=client.invitelink),
+                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 2 💢", url=client.invitelink),
             ],
             [
                 InlineKeyboardButton(text="🔥 𝚃𝙴𝙽𝚃𝙰𝙽𝙶 𝙰𝙺𝚄 🔥", callback_data="about"),
@@ -43,8 +43,8 @@ def start_button(client):
                 InlineKeyboardButton(text="🔥 𝚃𝙴𝙽𝚃𝙰𝙽𝙶 𝙰𝙺𝚄 🔥", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 💢", url=client.invitelink),
-                #InlineKeyboardButton(text="💢 𝙶𝚁𝙾𝚄𝙿 💢", url=client.invitelink2),#
+                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 1 💢", url=client.invitelink),
+                InlineKeyboardButton(text="💢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 2 💢", url=client.invitelink2),
             ],
             [InlineKeyboardButton(text="• 𝙲𝙻𝙾𝚂𝙴 •", callback_data="close")],
         ]
@@ -55,14 +55,14 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                #InlineKeyboardButton(text="⛓️ 𝙶𝚁𝙾𝚄𝙿 ⛓️", url=client.invitelink2),#
+                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 2 ⛓️", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="♻️ 𝙺𝙻𝙸𝙺 𝚂𝙰𝚈𝙰 ♻️",
+                        text="♻️ 𝙺𝙻𝙸𝙺 𝚄𝙻𝙰𝙽𝙶 𝙳𝙸𝚂𝙸𝙽𝙸 ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -73,14 +73,14 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⛓️", url=client.invitelink),
+                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 1 ⛓️", url=client.invitelink),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="♻️ 𝙺𝙻𝙸𝙺 𝚂𝙰𝚈𝙰 ♻️",
+                        text="♻️ 𝙺𝙻𝙸𝙺 𝚄𝙻𝙰𝙽𝙶 𝙳𝙸𝚂𝙸𝙽𝙸 ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -91,15 +91,15 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⛓️", url=client.invitelink),
-                #InlineKeyboardButton(text="⛓️ 𝙶𝚁𝙾𝚄𝙿 ⛓️", url=client.invitelink2),#
+                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 1⛓️", url=client.invitelink),
+                InlineKeyboardButton(text="⛓️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 2 ⛓️", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="♻️ 𝙺𝙻𝙸𝙺 𝚂𝙰𝚈𝙰 ♻️",
+                        text="♻️ 𝙺𝙻𝙸𝙺 𝚄𝙻𝙰𝙽𝙶 𝙳𝙸𝚂𝙸𝙽𝙸 ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
